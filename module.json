@@ -1,0 +1,57 @@
+{
+	"name": "waw",
+	"title": "Wands & Wizards",
+	"description": "A module to add the ability to run Wands & Wizards games in your 5e system.",
+
+	"esmodules": [
+		"./src/wandsandwizards.js"
+	],
+	"styles":[
+		"./styles/waw.css",
+		"./styles/badger.css",
+		"./styles/eagle.css",
+		"./styles/lion.css",
+		"./styles/snake.css"
+	],
+	"packs": [
+		{
+		  "name": "houses",
+		  "label": "Houses (W&W)",
+		  "system": "dnd5e",
+		  "path": "./packs/houses.db",
+		  "entity": "Item"
+		},
+		{
+		  "name": "subclass-features-wandw",
+		  "label": "Subclass Features (W&W)",
+		  "system": "dnd5e",
+		  "path": "./packs/subclass-features-wandw.db",
+		  "entity": "Item"
+		},
+		{
+		  "name": "spells-wandw",
+		  "label": "Spells (W&W)",
+		  "system": "dnd5e",
+		  "path": "./packs/spells-wandw.db",
+		  "entity": "Item"
+		},
+		{
+		  "name": "casting-styles-and-schools-of-magic-wandw",
+		  "label": "Casting Styles & Schools of Magic (W&W)",
+		  "system": "dnd5e",
+		  "path": "./packs/casting-styles-and-schools-of-magic-wandw.db",
+		  "entity": "Item"
+		},
+		{
+		  "name": "feats",
+		  "label": "Feats (W&W)",
+		  "system": "dnd5e",
+		  "path": "./packs/feats-wandw.db",
+		  "entity": "Item"
+		}
+	  ],
+
+	"author": "Parker (sparkcities#2000)",
+	"version": "1.0.0",
+	"minimumCoreVersion": "0.5.0"
+  }
