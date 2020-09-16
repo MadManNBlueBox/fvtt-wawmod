@@ -1,7 +1,7 @@
 {
 	"name": "waw",
 	"title": "Wands & Wizards",
-	"description": "A module to add the ability to run Wands & Wizards games in your 5e system.",
+	"description": "A module to add support for Wands & Wizards 5e to your 5e world.",
 
 	"esmodules": [
 		"./src/wandsandwizards.js"
@@ -51,7 +51,13 @@
 		}
 	  ],
 
+	"system": "dnd5e",
 	"author": "Parker (sparkcities#2000)",
 	"version": "1.0.0",
-	"minimumCoreVersion": "0.5.0"
+	"minimumCoreVersion": "0.6.5",
+	"compatibleCoreVersion": "0.6.6",
+	"url": "https://github.com/sparkcity/fvtt-wawmod",
+	"manifest": "https://raw.githubusercontent.com/sparkcity/fvtt-wawmod/master/module.json",
+	"download": "https://github.com/sparkcity/fvtt-wawmod/releases/download/v1.0/module.zip",
+	"readme": "https://github.com/sparkcity/fvtt-wawmod/blob/master/README.md"
   }
