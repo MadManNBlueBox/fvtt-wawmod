@@ -90,3 +90,4 @@ class WandsAndWizardsBadgerSheet extends ActorSheet5eCharacter {
 			</li>
 		`); 
 	});
+	
