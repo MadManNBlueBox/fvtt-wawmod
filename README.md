@@ -14,4 +14,10 @@ Any references left in have been cross-referenced through the [Copyright Catalog
 * 5 Character Sheet Themes (Default, Lion, Snake, Eagle, Badger)
 * Wands & Wizards Compendiums: Feats, Schools of Magic & Casting Styles, Houses, Subclasses, Spells
 
+## Compatibilities:
+* Compact DnDBeyond 5e Character Sheet
+
+## Incompatibilities:
+* Tidy5e Sheet
+
 ![Image](https://github.com/sparkcity/fvttprojects/blob/master/screenshots/waw0.png?raw=true "Wands & Wizards Overview")
