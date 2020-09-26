@@ -25,6 +25,13 @@
 /* ----------------------------------------- */
 /*  Flexbox                                  */
 /* ----------------------------------------- */
+.snake input.customskill {
+  width: 30px;
+}
+.snake.sheet.actor ul.skills-list li.skill .skill-mod.custom {
+  flex: 0 0 80px;
+}
+
 .flexrow {
   display: flex;
   flex-direction: row;

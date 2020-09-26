@@ -25,6 +25,13 @@
 /* ----------------------------------------- */
 /*  Flexbox                                  */
 /* ----------------------------------------- */
+.eagle input.customskill {
+  width: 30px;
+}
+.eagle.sheet.actor ul.skills-list li.skill .skill-mod.custom {
+  flex: 0 0 80px;
+}
+
 .flexrow {
   display: flex;
   flex-direction: row;

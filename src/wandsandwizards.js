@@ -1,5 +1,5 @@
 import Actor5e from "../../../systems/dnd5e/module/actor/entity.js";
-import { DND5E } from "../../../systems/dnd5e/module/config.js";
+import { DND5E } from '../../../systems/dnd5e/module/config.js';
 import ActorSheet5eCharacter from "../../../systems/dnd5e/module/actor/sheets/character.js";
 
 //Changing out deprecated 5e skills to their Wands & Wizards counterparts1
@@ -7,14 +7,18 @@ DND5E.skills["arc"] = "History of Magic";
 DND5E.skills["his"] = "Muggle Studies";
 DND5E.skills["nat"] = "Herbology";
 DND5E.skills["ani"] = "Magical Creatures";
-DND5E.skills["ptn"] = "Potion-Making";
 
 //Add potion-making to the character sheet as a skill
 const prep = Actor5e.prototype.prepareBaseData;	
 
 function extendActorData() {
-	const skl = this.data.data.skills;
-	skl["ptn"] = skl["ptn"] || {value: 0, ability: "wis"};
+	const dat = this.data.data;
+	dat["newskills"] = dat["newskills"] || 
+	{ "ptn": 
+		{
+			total: ''
+		}
+	};
 	return prep.call(this);
 }
 Actor5e.prototype.prepareBaseData = extendActorData;
@@ -72,5 +76,17 @@ class WandsAndWizardsBadgerSheet extends ActorSheet5eCharacter {
 	});
 	Actors.registerSheet("dnd5e", WandsAndWizardsSnakeSheet, { 
 		types: ["character"],
-		makeDefault: false 
+		makeDefault: true 
+	});
+
+	Hooks.on("renderActorSheet", (app, html, data) => {
+		const skillslist = html.find("section.sheet-body").find("ul.skills-list");
+		skillslist.append(`
+			<li class="skill flexrow ptn" data-skill="wis">
+				<input type="hidden" name="data.newskills.ptn.value" data-dtype="Number">
+				<h4 class="skill-name">Potion-Making</h4>
+				<span class="skill-ability custom">Wis</span>
+				<span class="skill-mod custom"><input name="data.newskills.ptn.total" type="text" value="${data.data.newskills.ptn.total}" data-dtype="Text" placeholder="+0"/></span>
+			</li>
+		`); 
 	});
