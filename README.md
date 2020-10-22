@@ -1,4 +1,6 @@
-[![Foundry](https://img.shields.io/badge/Foundry-0.6.5-green)](https://foundryvtt.com/)
+[![Foundry](https://img.shields.io/badge/Foundry%40Minimum-0.6.6-green)](https://foundryvtt.com/)
+[![Foundry](https://img.shields.io/badge/Foundry%40CompatibleCore-0.7.5-brightgreen)](https://foundryvtt.com/)
+[![DND5E](https://img.shields.io/badge/DnD5E-0.98-orange)](https://gitlab.com/foundrynet/dnd5e)
 ![GitHub All Releases](https://img.shields.io/github/downloads/sparkcity/fvtt-wawmod/total)
 
 # FVTT Wands & Wizards - DnD5e-Based Game System
